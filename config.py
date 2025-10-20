@@ -1,0 +1,5 @@
+API_ID = 0
+API_HASH = "0"
+SESSION = "userbot.session"
+TARGET_CHANNEL = 'ME' 
+CHECK_INTERVAL_SECONDS = 1
