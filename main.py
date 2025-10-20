@@ -70,14 +70,13 @@ class GiftUpgrader:
 
     async def loop(self):
         print(BANNER)
-        await self.log("Старт мониторинга улучшений")
         while True:
             try:
                 await self.run_once()
             except asyncio.TimeoutError:
-                await self.log("Таймаут цикла")
+                await self.log("Cycle timeout")
             except Exception as e:
-                await self.log(f"Сбой цикла: {repr(e)}")
+                await self.log(f"Cycle error: {repr(e)}")
             
             await asyncio.sleep(config.CHECK_INTERVAL_SECONDS)
 
@@ -92,3 +91,4 @@ if __name__ == "__main__":
         asyncio.run(amain())
     except KeyboardInterrupt:
         sys.exit(0)
+
