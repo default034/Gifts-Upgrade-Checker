@@ -25,7 +25,7 @@ Follow these steps to set up the monitoring bot:
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/default034/Upgrade-Checker.git
+    git clone https://github.com/default034/Gifts-Upgrade-Checker.git
     cd Upgrade-Checker
     ```
 
